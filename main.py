@@ -6,9 +6,9 @@ import plotly.graph_objects as go
 import io
 import plotly.io as pio
 
-# image_path = './data/logo.png'
-data_path = 'C:\streamlit\Graphica\data'
-image_path = data_path+'\logo.png'
+image_path = './data/logo.png' 
+# data_path = 'C:\streamlit\Graphica\data'
+# image_path = data_path+'\logo.png'
 st.image(image_path, width=400)
 
 # --- 0.マニュアルとサンプルデータ ---
@@ -18,8 +18,8 @@ st.markdown("""##### 0. はじめての方へ""")
 with st.expander("0. 使用マニュアルとサンプルデータ", expanded=False):
     st.markdown('<br>', unsafe_allow_html=True)
     st.markdown("""###### ・ マニュアルの確認""")
-    # manual_path = '.\data\Graphica_manual.pdf'
-    manual_path = data_path+'\Graphica_manual_ver1.0.pdf'
+    manual_path = '.\data\Graphica_manual.pdf'
+    # manual_path = data_path+'\Graphica_manual_ver1.0.pdf'
     st.write("以下のボタンからマニュアルをダウンロード")
     with open(manual_path, "rb") as file:
         st.download_button(
@@ -31,8 +31,8 @@ with st.expander("0. 使用マニュアルとサンプルデータ", expanded=Fa
     st.markdown('<br>', unsafe_allow_html=True)  
     st.markdown("""###### ・ サンプルデータのダウンロード""")
     # 埋め込みZIPファイルのパス
-    # zip_file_path = '.\data\sample_data.zip'
-    zip_file_path = data_path+'\sample_data.zip'
+    zip_file_path = '.\data\sample_data.zip'
+    # zip_file_path = data_path+'\sample_data.zip'
     st.write("以下のボタンからサンプルデータをダウンロード")
     with open(zip_file_path, "rb") as file:
         st.download_button(
