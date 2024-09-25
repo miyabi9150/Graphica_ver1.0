@@ -31,7 +31,7 @@ with st.expander("0. 使用マニュアルとサンプルデータ", expanded=Fa
     st.markdown('<br>', unsafe_allow_html=True)  
     st.markdown("""###### ・ サンプルデータのダウンロード""")
     # 埋め込みZIPファイルのパス
-    zip_file_path = '.\data\sample_data.zip'
+    zip_file_path = './data/sample_data.zip'
     # zip_file_path = data_path+'\sample_data.zip'
     st.write("以下のボタンからサンプルデータをダウンロード")
     with open(zip_file_path, "rb") as file:
